@@ -19,7 +19,6 @@ public void saveCategory(Category category) {
         if (baseRepository.getByName(category.getNamee()).getId() == 0) {
                 Category category1 = new Category();
                 category1.setNamee(category.getNamee());
-                category1.setSerial(category.getSerial());
                 baseRepository.saveCategory(category1);
                 System.out.println("Kategori eklendi.");
         }
